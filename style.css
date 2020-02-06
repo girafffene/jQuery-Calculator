@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100px;
+}
+
+.calculator {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#num1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 10px;
+}
+
+#num2 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 10px;
+}
+
+#num1,
+#num2 {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: lightcoral;
+}
+
+#num1,
+#num2:focus {
+  outline: none;
+}
+
+#add {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#subtract {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#multiply {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#divide {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#add,
+#subtract,
+#multiply,
+#divide {
+  height: 25px;
+  width: 25px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid white;
+}
+
+#add,
+#subtract,
+#multiply,
+#divide:focus {
+  outline: none;
+}
+
+#add:hover {
+  background-color: palevioletred;
+}
+
+#subtract:hover {
+  background-color: palevioletred;
+}
+#multiply:hover {
+  background-color: palevioletred;
+}
+
+#divide:hover {
+  background-color: palevioletred;
+}
+
+#answer {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 75px;
+  font-size: 10px;
+  padding-left: 22px;
+  padding-bottom: 2px;
+  color: lightcoral;
+}
+
+#answer:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: lightcoral;
+}

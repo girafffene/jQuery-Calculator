@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.calcButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 100px;
+  width: 100px;
+  grid-gap: 0;
+}
+
+#numBox {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  color: white;
+  background-color: rgb(104, 179, 93);
+  border: 1px solid rgb(129, 192, 120);
+}
+
+#divide,
+#multiply,
+#add,
+#subtract {
+  background-color: rgb(133, 193, 125);
+  color: rgb(72, 105, 68);
+  border: 1px solid rgb(129, 192, 120);
+}
+
+#divide,
+#multiply,
+#add,
+#subtract:focus {
+  outline: none;
+}
+
+#clear,
+.numButton,
+#equals,
+#clear {
+  color: white;
+  background-color: rgb(104, 179, 93);
+  border: 1px solid rgb(129, 192, 120);
+}
+
+#clear,
+.numButton,
+#equals,
+#clear:focus {
+  outline: none;
+}
